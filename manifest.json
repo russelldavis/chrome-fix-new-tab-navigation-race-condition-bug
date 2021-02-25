@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "name": "Extension API Testing",
+  "version": "0.1",
+  "browser_action": {
+  },
+  "permissions": ["tabs", "webNavigation"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "commands": {
+    "blank-new-tab": {
+      "suggested_key": {
+        "default": "Ctrl+T",
+        "mac": "Command+T"
+      },
+      "description": "Open blank new tab"
+    },
+    "blank-new-window": {
+      "suggested_key": {
+        "default": "Ctrl+N",
+        "mac": "Command+N"
+      },
+      "description": "Open blank new window"
+    },
+    "blank-new-window-incognito": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+N",
+        "mac": "Command+Shift+N"
+      },
+      "description": "Open blank new incognito window"
+    }
+  }
+}
