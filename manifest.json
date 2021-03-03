@@ -1,34 +1,14 @@
 {
   "manifest_version": 2,
-  "name": "Extension API Testing",
+  "name": "Fix new-tab navigation race condition bug",
   "version": "0.1",
-  "browser_action": {
+  "icons": {
+    "16": "icon-16.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png"
   },
   "permissions": ["tabs", "webNavigation"],
   "background": {
     "scripts": ["background.js"]
-  },
-  "commands": {
-    "blank-new-tab": {
-      "suggested_key": {
-        "default": "Ctrl+T",
-        "mac": "Command+T"
-      },
-      "description": "Open blank new tab"
-    },
-    "blank-new-window": {
-      "suggested_key": {
-        "default": "Ctrl+N",
-        "mac": "Command+N"
-      },
-      "description": "Open blank new window"
-    },
-    "blank-new-window-incognito": {
-      "suggested_key": {
-        "default": "Ctrl+Shift+N",
-        "mac": "Command+Shift+N"
-      },
-      "description": "Open blank new incognito window"
-    }
   }
 }
